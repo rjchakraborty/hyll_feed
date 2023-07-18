@@ -119,12 +119,12 @@ class HomeController extends GetxController {
                         ConstrainedBox(
                           constraints: BoxConstraints(minWidth: 55),
                           child: Padding(
-                            padding: const EdgeInsets.all(5),
+                            padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 5),
                             child: Text(
                               gridList[index].value?.toTitleCase() ?? '',
                               textAlign: TextAlign.center,
                               style: ThemeFonts.p3Medium(
-                                  textColor: HexColor.getColor('')),
+                                  textColor: HexColor.getColor(PRIMARY_DARK_COLOR_HEX)),
                             ),
                           ),
                         ),
