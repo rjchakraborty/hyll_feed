@@ -300,10 +300,10 @@ class HomeController extends GetxController {
                       trimLines: 2,
                       style: ThemeFonts.p3Regular(
                           textColor: AdaptiveTheme.getCurrentInvertColor()),
-                      colorClickableText: Colors.pink,
+                      colorClickableText: AdaptiveTheme.getCurrentInvertColor(),
                       trimMode: TrimMode.Line,
-                      trimCollapsedText: '...Show more',
-                      trimExpandedText: ' show less',
+                      trimCollapsedText: '...Show More',
+                      trimExpandedText: ' Show Less',
                     ),
                   ),
                   Center(
