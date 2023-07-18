@@ -11,8 +11,9 @@ class HomeProvider {
   fetchHomeSliderAPI({
     required Function(List<SliderEntity>) onSuccess,
   }) async {
-    final response =
-        await CommonHttpClient(adventures_login_api, body: <String, String>{}, method: MethodType.GET).getDigestAuthResponse();
+    final response = await CommonHttpClient(adventures_login_api,
+        body: <String, String>{}, method: MethodType.GET)
+        .getDigestAuthResponse();
 
     if (response != null) {
       if (CommonUtils.checkIfNotNull(response.body)) {
@@ -20,11 +21,19 @@ class HomeProvider {
         if (resMap != null) {
           HomeController.to.count.value = (resMap['count'] as int?) ?? 0;
           HomeController.to.nextLink.value = (resMap['next'] as String?) ?? '';
-          HomeController.to.prevLink.value = (resMap['previous'] as String?) ?? '';
+          HomeController.to.prevLink.value =
+              (resMap['previous'] as String?) ?? '';
           if (resMap['data'] != null) {
             var list = resMap['data'] as List?;
             if (list != null && list.isNotEmpty) {
-              onSuccess(await list.map((i) => SliderEntity.fromJson(i)).toList());
+              List<SliderEntity> sList = [];
+              try {
+                sList = await list.map((i) => SliderEntity.fromJson(i)).toList();
+              } catch (e) {
+                sList = [];
+              } finally {
+                onSuccess(sList);
+              }
             }
           }
         }

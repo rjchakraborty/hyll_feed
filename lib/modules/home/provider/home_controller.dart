@@ -123,9 +123,8 @@ class HomeController extends GetxController {
                             child: Text(
                               gridList[index].value?.toTitleCase() ?? '',
                               textAlign: TextAlign.center,
-                              style: ThemeFonts.p3Regular(
-                                  textColor:
-                                      AdaptiveTheme.getCurrentInvertColor()),
+                              style: ThemeFonts.p3Medium(
+                                  textColor: HexColor.getColor('')),
                             ),
                           ),
                         ),
@@ -437,8 +436,8 @@ class HomeController extends GetxController {
 
   getShimmerView() {
     return Shimmer.fromColors(
-      baseColor: HexColor.getColor(DARK_GREY_COLOR_HEX),
-      highlightColor: HexColor.getColor(DARK_GREY_COLOR_HEX).withOpacity(.85),
+      baseColor: HexColor.getColor(PRIMARY_COLOR_HEX),
+      highlightColor: HexColor.getColor(PRIMARY_DARK_COLOR_HEX).withOpacity(.85),
       enabled: true,
       child: SingleChildScrollView(
         child: Column(
