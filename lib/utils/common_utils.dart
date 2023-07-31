@@ -54,10 +54,10 @@ class CommonUtils {
 
   static Future<bool> checkInternet() async {
     var connectivityResult = await (Connectivity().checkConnectivity());
-    GeneralController.to.isConnected.value =
+    GeneralController.isConnected =
         (connectivityResult == ConnectivityResult.mobile ||
             connectivityResult == ConnectivityResult.wifi);
-    return GeneralController.to.isConnected.value;
+    return GeneralController.isConnected;
   }
 
   static Widget getCircularNetworkImage(String? imageURL, double imageSize) {
@@ -586,8 +586,8 @@ class CommonUtils {
   }
 
   static showProgressDialog(bool showLoading, String url) {
-    if (!GeneralController.to.loadedUrls.contains(url))
-      GeneralController.to.loadedUrls.add(url);
+    if (!GeneralController.loadedUrls.contains(url))
+      GeneralController.loadedUrls.add(url);
     if (showLoading && !(Get.isDialogOpen ?? false)) {
       Get.dialog(
         CommonUtils.getLoaderWidget(),
@@ -598,8 +598,8 @@ class CommonUtils {
   }
 
   static hideProgressDialog(String url) {
-    if (GeneralController.to.loadedUrls.contains(url))
-      GeneralController.to.loadedUrls.remove(url);
+    if (GeneralController.loadedUrls.contains(url))
+      GeneralController.loadedUrls.remove(url);
     if (Get.isDialogOpen != null && Get.isDialogOpen!) {
       Get.close(1);
     }

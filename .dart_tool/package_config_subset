@@ -18,6 +18,10 @@ async
 2.18
 file:///Users/rj/.pub-cache/hosted/pub.dev/async-2.11.0/
 file:///Users/rj/.pub-cache/hosted/pub.dev/async-2.11.0/lib/
+bloc
+2.12
+file:///Users/rj/.pub-cache/hosted/pub.dev/bloc-8.1.2/
+file:///Users/rj/.pub-cache/hosted/pub.dev/bloc-8.1.2/lib/
 boolean_selector
 2.17
 file:///Users/rj/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/
@@ -138,6 +142,10 @@ fixnum
 2.19
 file:///Users/rj/.pub-cache/hosted/pub.dev/fixnum-1.1.0/
 file:///Users/rj/.pub-cache/hosted/pub.dev/fixnum-1.1.0/lib/
+flutter_bloc
+2.12
+file:///Users/rj/.pub-cache/hosted/pub.dev/flutter_bloc-8.1.3/
+file:///Users/rj/.pub-cache/hosted/pub.dev/flutter_bloc-8.1.3/lib/
 flutter_blurhash
 2.15
 file:///Users/rj/.pub-cache/hosted/pub.dev/flutter_blurhash-0.7.0/
@@ -162,10 +170,6 @@ get
 2.15
 file:///Users/rj/.pub-cache/hosted/pub.dev/get-4.6.5/
 file:///Users/rj/.pub-cache/hosted/pub.dev/get-4.6.5/lib/
-get_it
-2.12
-file:///Users/rj/.pub-cache/hosted/pub.dev/get_it-7.6.0/
-file:///Users/rj/.pub-cache/hosted/pub.dev/get_it-7.6.0/lib/
 get_storage
 2.16
 file:///Users/rj/.pub-cache/hosted/pub.dev/get_storage-2.1.1/
@@ -354,10 +358,6 @@ pubspec_parse
 2.14
 file:///Users/rj/.pub-cache/hosted/pub.dev/pubspec_parse-1.2.1/
 file:///Users/rj/.pub-cache/hosted/pub.dev/pubspec_parse-1.2.1/lib/
-pull_to_refresh
-2.12
-file:///Users/rj/.pub-cache/hosted/pub.dev/pull_to_refresh-2.0.0/
-file:///Users/rj/.pub-cache/hosted/pub.dev/pull_to_refresh-2.0.0/lib/
 readmore
 2.16
 file:///Users/rj/.pub-cache/hosted/pub.dev/readmore-2.2.0/

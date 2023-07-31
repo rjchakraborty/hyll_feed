@@ -52,7 +52,7 @@ class CommonHttpClient {
     http.Response? response;
     CommonUtils.checkInternet();
     CommonUtils.showProgressDialog(showLoading, url);
-    if (CommonUtils.checkIfNotNull(url) && GeneralController.to.isConnected.value) {
+    if (CommonUtils.checkIfNotNull(url) && GeneralController.isConnected) {
       var isOngoingConnection = (AppConstants.ONGOING_ACTIONS[url] != null && AppConstants.ONGOING_ACTIONS[url] == true);
       if (!isOngoingConnection) {
         AppConstants.ONGOING_ACTIONS[url] = true;
